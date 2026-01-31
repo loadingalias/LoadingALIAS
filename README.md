@@ -4,23 +4,24 @@
 
 ## Rust Systems Engineer
 
-Building supply-chain-safe tooling and high-performance cryptographic primitives.
+Building supply-chain-safe tooling and high-performance crypto primitives.
 4+ years shipping Rust across distributed systems, embedded platforms, and storage engines.
+Particularly interested in low-level systems, databases, and crypto... but working on a better alternative to industry standard observability, as well.
 
-**Open to:** Contract, temporary, or full-time Rust roles · Remote preferred · USA (open to relocation)
+**Open to:** Contract, temporary, or full-time Rust roles · Remote preferred · USA (open to global relocation)
 **Contact:** thealiaslab@gmail.com
 
 ---
 
-### Open Source
+### Open Source Work (Side Quests)
 
 **[cargo-rail](https://github.com/loadingalias/cargo-rail)** — Monorepo orchestration for Rust workspaces
-190+ ★ · Replaces cargo-hakari, cargo-udeps, cargo-machete, cargo-release, cargo-msrv with 11 deps
+190+ stars · Replaces cargo-hakari, cargo-udeps, cargo-machete, cargo-release, git-cliff, cargo-msrv with 11 deps
 Tested on tikv, polars, helix, tokio, meilisearch, ripgrep · [GitHub Action](https://github.com/loadingalias/cargo-rail-action)
 
-**[rscrypto](https://github.com/loadingalias/rscrypto)** — Pure Rust cryptography, zero external dependencies
-72–80 GiB/s CRC on Zen 4 · 75 GiB/s on Apple M3 · Hand-tuned ASM
-x86-64, ARM64, RISC-V, s390x, POWER9/P10 · Accepted by IBM for CI/CD on mainframe architectures
+**[rscrypto](https://github.com/loadingalias/rscrypto)** — Pure Rust cryptography, zero external dependencies and/or C-libs
+The most performant, portable, and sound checksums (CRC 16/24/32/32C/64XZ/64NVME) on the planet
+x86-64, ARM64, RISC-V, s390x, POWER9/P10 · Accepted by IBM for CI/CD usage on mainframe architectures
 
 ---
 
@@ -28,7 +29,11 @@ x86-64, ARM64, RISC-V, s390x, POWER9/P10 · Accepted by IBM for CI/CD on mainfra
 
 Distributed storage engine at [@alias-research](https://github.com/alias-research) — 2 years in development, approaching v1.
 
-The work is anchored in what I believe is a meaningful advance in safe memory reclamation. This has enabled a new class of low-level primitives: a novel SMR scheme, high-resolution timing, a consensus algorithm, and database internals that don't follow conventional wisdom. Private for now. The OSS above was built to support it.
+The work is anchored in a novel epoch-based reclamation primitive that enables sub-10ns MVCC operations with deterministic O(1) garbage collection. This has unlocked an architecture traditional databases can't achieve: true multi-model storage (KV, OLAP, Vector, Graph, Streaming) over unified epoch-versioned segments — not separate engines bolted together.
+
+Key properties: same bytes everywhere (memory = disk = wire = consensus), one GC rule for the entire system, O(1) crash recovery. Verification via Loom, Shuttle, Kani, and Stateright before anything ships.
+
+Private for now; v1 is not far. The OSS above was built to support it.
 
 ---
 
