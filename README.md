@@ -15,8 +15,8 @@ I design and ship **deterministic, supply-chain-safe systems in Rust** — focus
 **[cargo-rail](https://github.com/loadingalias/cargo-rail)**  
 Monorepo orchestration for serious Rust workspaces.
 
-- Replaces `cargo-hakari`, `cargo-udeps`, `cargo-machete`, `cargo-release`, `git-cliff`, and `cargo-msrv`
-- 190+ stars · 11 total dependencies
+- Replaces `cargo-hakari`, `cargo-udeps`, `cargo-machete`, `cargo-release`, `git-cliff`, `Google Copybara`,and `cargo-msrv`
+- 190+ stars · 14 total dependencies
 - Used and tested on `tikv`, `tokio`, `polars`, `helix`, `meilisearch`, `ripgrep`
 - Official [GitHub Action](https://github.com/loadingalias/cargo-rail-action)
 
@@ -24,16 +24,17 @@ Monorepo orchestration for serious Rust workspaces.
 Pure-Rust cryptographic primitives with **zero C dependencies**.
 
 - High-performance CRC implementations (16/24/32/32C/64XZ/64NVME)
+- Pure Rust Blake3 impl across all supported platforms at parity with or surpassing the official Blake3 implementation.
 - Portable across x86-64, ARM64, RISC-V, s390x, POWER9/P10
 - Accepted by **IBM** for CI/CD usage on mainframe architectures
 
-These projects exist because I value **minimal dependency graphs, reproducible builds, and predictable performance**.
+These projects exist because I needed them for my own work.
 
 ---
 
 ### Current Work
 
-I’m building a **distributed storage engine** at [@alias-research](https://github.com/alias-research), approaching its first public release.
+I’m building a **distributed storage engine** at [@alias-research](https://github.com/alias-research), approaching its first public release in the next few months.
 
 The system is centered around a novel **epoch-based reclamation primitive** that enables:
 
@@ -43,10 +44,7 @@ The system is centered around a novel **epoch-based reclamation primitive** that
 
 This allows a unified architecture where **KV, OLAP, vector, graph, and streaming workloads** operate over the same epoch-versioned data model — not separate engines stitched together.
 
-Key design constraint:  
-**the same bytes everywhere** (memory = disk = wire = consensus), enforced by a single GC rule across the entire system.
-
-The implementation is heavily validated using Loom, Shuttle, Kani, and Stateright before anything ships.
+The implementation is heavily validated using Loom, Shuttle, Kani, and Stateright before anything ships. It's not a toy database. 
 
 Private for now. The open-source work above exists to support and harden this system.
 
@@ -54,8 +52,7 @@ Private for now. The open-source work above exists to support and harden this sy
 
 ### Availability
 
-Open to **contract or full-time Rust roles**.  
-Remote preferred. Open to relocation (USA or global).
+None. I'm not currently looking for work.
 
 **Contact:** thealiaslab@gmail.com
 
