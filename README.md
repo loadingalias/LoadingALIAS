@@ -36,12 +36,8 @@ Founder and engineer at [@alias-research](https://github.com/alias-research). Th
 
 ---
 
-### Availability
+### Contact
 
-Contact Me. 
+**X, Reddit, Crates, Rust Forum, Lobste.rs:** loadingalias
 
 **Email:** thealiaslab@gmail.com
-**X/Twitter:** [@loadingalias](https://x.com/@loadingalias)
-**Crates:** [loadingalias](https://crates.io/users/loadingalias)
-**Rust Forum:** [loadingalias](https://users.rust-lang.org/u/loadingalias)
-**Lobsters:** [loadingalias](https://lobste.rs/u/loadingalias)
