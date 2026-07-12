@@ -17,8 +17,6 @@ My work spans distributed systems, storage engines, safe memory reclamation,embe
 - **Split/Sync like Copybara w/o Copybara.**
 - **One graph, one source of truth.**
 
-[crates.io](https://crates.io/crates/cargo-rail) · [docs.rs](https://docs.rs/cargo-rail) · [GitHub Action](https://github.com/loadingalias/cargo-rail-action)
-
 **[rscrypto](https://github.com/loadingalias/rscrypto)** — **Pure-Rust cryptography built to outperform the incumbent stacks.**
 
 One `no_std`/WASM-native primitive stack covering hashes, AEADs, MACs, KDFs, password hashing, signatures, key exchange, ML-KEM, RSA, and checksums—with zero default dependencies and no production C/FFI, OpenSSL, or system-library coupling.
@@ -26,9 +24,7 @@ One `no_std`/WASM-native primitive stack covering hashes, AEADs, MACs, KDFs, pas
 - **1.59× faster by geomean**
 - **5.18× for checksums, 1.56× for AEADs, 1.55× for RSA, 1.49× for ML-KEM, and 1.41× against the official BLAKE3 implementation**
 - **Portable Rust is the authority; SIMD and ASM are accelerators.**
-- **Security is proven by evidence.**
-
-[Benchmarks; Evidence](https://github.com/loadingalias/rscrypto/blob/main/benchmark_results/OVERVIEW.md) · [docs.rs](https://docs.rs/rscrypto) · [security model](https://github.com/loadingalias/rscrypto/blob/main/THREAT_MODEL.md)
+- **Security is proven by evidence; Pending Audit Financing Now**
 
 Both of the above projects are requirements of the work I'm doing. I use them everyday. I will maintain them as part of my reputation and my ongoing work indefinitely.
 
