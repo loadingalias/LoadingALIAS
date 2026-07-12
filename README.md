@@ -40,12 +40,8 @@ Founder and engineer at [@alias-research](https://github.com/alias-research). Th
 
 Contact Me. 
 
-**Contact:** thealiaslab@gmail.com
-
----
-
-<p align="center">
-  <a href="https://dev.to/loadingalias">Blog</a> ·
-  <a href="https://crates.io/users/loadingalias">Crates</a> ·
-  <a href="https://x.com/@loadingalias">X</a>
-</p>
+**Email:** thealiaslab@gmail.com
+**X/Twitter:** [@loadingalias](https://x.com/@loadingalias)
+**Crates:** [loadingalias](https://crates.io/users/loadingalias)
+**Rust Forum:** [loadingalias](https://users.rust-lang.org/u/loadingalias)
+**Lobsters:** [loadingalias](https://lobste.rs/u/loadingalias)
