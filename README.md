@@ -1,35 +1,37 @@
 ## Rust Systems Engineer
 
-I'm primarily a Rust engineer. I live to collapse fragmented stacks into more efficient systems. My current work is centered around storage engines, query engines, distributed systems, embedded targets, and cryptography.
+I focus mainly on collapsing fragmented, legacy systems into smaller, faster, more efficient ones. This is the work that makes me happiest. I enjoy thinking about old problems from a modern perspective; I enjoy unraveling the reasons behind why a system does what it does.
 
-I use JS/TS for my frontends - at least until GPUI can replace them. I am learning OCaml. My current side quest is research based; I am searching for the ideal resolver shape/equation using machine learning models and good ole' fashion reading.
+I prefer to write Rust; every once in a while I'll pick up Typescript. My work spans dev tooling, cryptography, storage engines, query engines, and distributed systems. I am a performance oriented engineer and I believe code should be maximally portable.
 
----
+### Most Important OSS Work
 
-### Selected Open Source
+**[cargo-rail](https://github.com/loadingalias/cargo-rail)** — **A Cargo-native workspace engine for Rust monorepos.**
 
-**[cargo-rail](https://github.com/loadingalias/cargo-rail)** — **A Rust workspace engine.**
+Built to improve my dev velocity. Built to make complex Rust workspaces faster to change and harder to mess up. Built to replace the mountain of Cargo plugins, release bots, cache wrappers, and glue that had accumulated in just a few weeks.
 
-A Cargo-native engine for dep/graph coherence, affected CI, source visibility, verified compiler reuse, exact-SHA releases, and canonical dev monorepos via split/sync. [cargo-rail-action](https://github.com/loadingalias/cargo-rail-action) carries its typed plans into GHA.
+Cargo-Rail scopes local builds, tests, checks... and through the [GHA](https://github.com/loadingalias/cargo-rail-action), CI, to what a change actually affects. It restores compiler work Cargo and sccache leave behind, significantly cutting rebuild time; finds code that never needed to be public; keeps deps coherent and the graph unified; turns changesets into customizable releases; and splits/syncs crates between a canonical dev monorepo and standalone OSS repos w/o dragging in Copybara or it's DSL.
 
-**[rscrypto](https://github.com/loadingalias/rscrypto)** — **Pure Rust cryptography.**
+Cargo-Rail fills the gaps I feel exist within Cargo w/o trying to replace it. It's powered by a single shared `WorkspaceContext1, so every feature works from the same captured view of the workspace instead of rediscovering, or worse - disagreeing about the state.
 
-One `no_std`/WASM-native feature model for cryptographic primitives, fast hashes, password hashing, and checksums. Zero default deps; no production C/FFI, OpenSSL, or system libs. Portable Rust defines behavior; SIMD and ASM accelerate it. A custom 'constant-time' harness includes manual unroll, inspect, and heuristics + dudeCT + BINSEC.
+**[rscrypto](https://github.com/loadingalias/rscrypto)** — **Portable pure-Rust cryptographic primitives.**
 
-Both projects exist because my startup needed them. I use and maintain them as infrastructure, not portfolio pieces. They will be maintained until my ticket gets punched.
+A pure-Rust cryptography lib that scales from bare-metal no_std and WASM to server systems, w/ one feature model for compiling only what we need. Portable Rust defines behavior, SIMD and ASM deliver perf, and security claims ship only with signed releases backed by published validation evidence.
 
----
+Both projects exist because I needed them myself. These aren't portfolio pieces. They're important to my work and will be maintianed until my ticket gets punched.
 
 ### Current Work
 
-Founder and lead engineer at [@alias-research](https://github.com/alias-research), building privately toward its first public release.
+Founder and lead engineer at [@alias-research](https://github.com/alias-research), privaetly building the future of storage, query, and data infra.
 
----
+### All the Things
 
-### Contact
+[My Engineering Diary](https://loadingalias.dev)
 
-Blog: [trace](https://loadingalias.dev)
+[Email](mailto:thealiaslab@gmail.com)
 
-**X, Reddit, Crates, Rust Forum, Lobste.rs:** loadingalias
+[Twitter/X](https://x.com/loadingalias)
 
-**Email:** thealiaslab@gmail.com
+[Lobste.rs](https://lobste.rs/@loadingalias)
+
+[Rust Forum](https://users.rust-lang.org/u/loadingalias/summary)
